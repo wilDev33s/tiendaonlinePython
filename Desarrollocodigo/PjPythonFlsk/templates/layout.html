@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<header class="header">
+    <!-- <img src="{{url_for('static', filename='img/Logo_MisionTIC_UIS.png')}}" alt="Logo Misión TIC UIS.">-->
+    <img class="header-img" src="{{url_for('static',filename='img/3.png')}}" alt="logo Ithec">
+    <h3>
+        {% block title %} Página en Flask - Aprendiendo en Misión TIC UIS {% endblock %}
+    </h3>
+    <hr>
+    <ul class="list">
+        <li>
+            <a href="/">Inicio</a>
+        </li>
+        <li>
+            <a href="{{url_for('informacion')}}">Acerca de nosotros</a>
+        </li>
+        <li>
+            <!-- <a href="/contenido.html">Página de Contenido</a> -->
+            <a href="{{url_for('contenido')}}">Nuestros productos y servicios</a>
+        </li>
+        <li>
+            <a href="{{url_for('contactenos')}}">Deseas ordenar contactanos</a>
+        </li>
+    </ul>
+    <hr>
+</header>
+
+<body>
+    {% block content %} Establecer el contenido... {% endblock %}
+</body>
+
+</html>
+
+
+{# {% extends 'layout.html' %} {% block title %} Página en Flask - Aprendiendo en Misión TIC UIS {% endblock %} {% block content %} Establecer el contenido... {% endblock %} #}

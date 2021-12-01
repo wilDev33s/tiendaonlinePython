@@ -1,0 +1,61 @@
+{% extends 'layout.html' %} {% block title %} Página de Inicio {% endblock %} {% block content %}
+<h1>
+    Bienvenidos al futuro tecnologico
+</h1>
+<br>
+<h2>
+    Hola administrador por favor verifica tu stock de productos:
+</h2>
+<hr>
+<h3>
+    <!-- Contenido variable rstDB = {{rstDB}} -->
+    <a href="{{url_for('registrar_productos')}}">
+            Click aquí para Registrar Productos
+        </a>
+</h3>
+
+<hr>
+
+<table border="3">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for db in rstDB %}
+        <tr>
+            <td>{{db[0]}}</td>
+            <td>{{db[1]}}</td>
+            <td>{{db[2]}}</td>
+            <td>{{db[3]}}</td>
+            <td>{{db[4]}}</td>
+            <td>
+                <form action="{{url_for('editar_productos')}}" method="POST">
+                    <input type="hidden" name="id" value="{{db[0]}}">
+                    <button>Editar Datos</button>
+                </form>
+            </td>
+            <td>
+                <form action="{{url_for('confirmar_eliminar_datos')}}" method="POST">
+                    <input type="hidden" name="id" value="{{db[0]}}">
+                    <button>Eliminar</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<hr>
+
+<p>
+    Para registrar sus productos recuerde verificar bien el stock fisico en almacen .
+</p>
+<!--<img class="cImg" src="https://lms.uis.edu.co/mintic/pluginfile.php/1/theme_essential/slide2image/1632326966/1.jpg" alt="Imagen no disponible"> {% endblock %}-->

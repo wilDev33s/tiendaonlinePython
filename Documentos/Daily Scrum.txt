@@ -1,0 +1,128 @@
+Daily Scrum
+
+Que hizo hoy?
+
+Hoy se creo el grupo en Git lab
+
+Que hice ayer?
+
+Se estudio como abrir una cuenta en Gitlab
+
+Que inconvenientes tuve?
+
+Ninguno hasta el momento.
+
+
+Que hizo hoy?
+
+Hoy se inicio con el desarrollo backend del proyecto en Python
+
+Que hice ayer?
+
+Se estudio la posibilidad de hacerlo en java
+
+Que inconvenientes tuve?
+
+Falta de compresion del lenguaje.
+
+
+Que hizo hoy?
+
+Hoy se inicia diseño de clases y formularios html
+
+Que hice ayer?
+
+Se inicia desarrollo backend
+
+Que inconvenientes tuve?
+
+Falta de compresion del lenguaje.
+
+
+Que hizo hoy?
+
+Se realiza conexion a base de datos.
+
+Que hice ayer?
+
+se realiza codigo en python.
+
+Que inconvenientes tuve?
+
+Aprendizaje.
+
+
+Que hizo hoy?
+
+Se termina el backend del proyecto 
+
+Que hice ayer?
+
+se realiza conexion a base de datos MySQL Workbench.
+
+Que inconvenientes tuve?
+
+Aprendizaje.
+
+
+Que hizo hoy?
+
+Se inicia diseños front end e interfaces web. 
+
+Que hice ayer?
+
+se estudio las estructuras de una pagina en el front- end
+
+Que inconvenientes tuve?
+
+Velocidad de aprendizaje.
+
+
+Que hizo hoy?
+
+Se enlaza formularios al backend  
+
+Que hice ayer?
+
+realizar codigo y diseño de tablas parta el CRUD.
+
+Que inconvenientes tuve?
+
+Velocidad de aprendizaje.
+
+
+
+Que hizo hoy?
+
+Se realizan diseños finales  en el front
+
+Que hice ayer?
+
+realizar diseño crud con el tutor
+
+Que inconvenientes tuve?
+
+Velocidad de aprendizaje.
+
+
+
+
+
+Que hizo hoy?
+
+Se termina Sprint del modulo de Registro de inventarios en Python web.
+
+Que hice ayer?
+
+realizar conexion a base de datos al crud.
+
+Que inconvenientes tuve?
+
+Velocidad de aprendizaje.
+
+
+
+
+
+
+

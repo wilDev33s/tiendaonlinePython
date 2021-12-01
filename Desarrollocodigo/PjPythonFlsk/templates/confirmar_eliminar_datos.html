@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} {% block title %} Página para Confirmar Eliminar Productos {% endblock %} {% block content %}
+<hr>
+<h3>
+    Por Favor Confirma que Desea Eliminar el Siguiente Producto
+</h3>
+<hr>
+<div>
+    <table border="3">
+        <thead>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{rstDB[0]}}</td>
+                <td>{{rstDB[1]}}</td>
+                <td>{{rstDB[2]}}</td>
+                <td>{{rstDB[3]}}</td>
+                <td>{{rstDB[4]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<form action="{{url_for('eliminar_datos')}}" method="POST">
+    <input type="hidden" name="id" value="{{rstDB[0]}}">
+    <button>
+                <h3>
+                    Eliminar
+                </h3>
+            </button>
+</form>
+<hr> {% endblock %}

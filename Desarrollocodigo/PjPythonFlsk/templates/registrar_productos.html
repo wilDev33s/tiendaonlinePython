@@ -1,0 +1,30 @@
+{% extends 'layout.html' %} {% block title %} Página para Registrar Productos {% endblock %} {% block content %}
+<hr>
+<h3>
+    Registro de Producto
+</h3>
+<hr>
+<div>
+    <form action="{{url_for('guardar_datos')}}" method="POST">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre"> <br>
+
+        <label for="cantidad">Cantidad</label>
+        <input type="number" name="cantidad"> <br>
+
+        <label for="categoria">Categoría</label>
+        <input type="text" name="categoria"> <br>
+
+        <label for="precio">Precio</label>
+        <input type="any" name="precio"> <br>
+
+
+        <input type="reset" value="Borrar Datos">
+        <input type="submit" value="Guardar Datos">
+
+    </form>
+    <hr>
+    <a href="/">Cancelar o Vover</a>
+</div>
+<hr> {% endblock %}

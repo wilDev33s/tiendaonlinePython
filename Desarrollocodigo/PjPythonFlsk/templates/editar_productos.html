@@ -1,0 +1,55 @@
+{% extends 'layout.html' %} {% block title %} Página para Editar Datos {% endblock %} {% block content %}
+<hr>
+<h3>
+    Editar Producto
+</h3>
+<hr>
+<div>
+    <table border="3">
+        <thead>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{rstDB[0]}}</td>
+                <td>{{rstDB[1]}}</td>
+                <td>{{rstDB[2]}}</td>
+                <td>{{rstDB[3]}}</td>
+                <td>{{rstDB[4]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+<div>
+    <form action="{{url_for('actualizar_datos')}}" method="POST">
+
+        <label for="id">id</label>
+        <input value="{{rstDB[0]}}" readonly="readonly" type="text" name="id"> <br>
+
+        <label for="nombre">Nombre</label>
+        <input value="{{rstDB[1]}}" type="text" name="nombre"> <br>
+
+        <label for="cantidad">Cantidad</label>
+        <input value="{{rstDB[2]}}" type="number" name="cantidad"> <br>
+
+        <label for="categoria">Categoría</label>
+        <input value="{{rstDB[3]}}" type="text" name="categoria"> <br>
+
+        <label for="precio">Precio</label>
+        <input value="{{rstDB[4]}}" type="any" name="precio"> <br>
+
+
+        <input type="reset" value="Restablecer Datos">
+        <input type="submit" value="Actualizar Datos">
+
+    </form>
+    <hr>
+    <a href="/">Cancelar o Vover</a>
+</div>
+<hr> {% endblock %}

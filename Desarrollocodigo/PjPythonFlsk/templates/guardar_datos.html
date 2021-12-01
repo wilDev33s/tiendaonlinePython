@@ -1,0 +1,23 @@
+{% extends 'layout.html' %} {% block title %} Página de Respuesta a Guardar Datos {% endblock %} {% block content %}
+<h3>
+    Información Resultado
+</h3>
+
+<br>
+<h3>
+    {{rstDB}}
+</h3>
+
+<ul>
+    <li>
+        <a href="{{url_for('registrar_productos')}}">
+                Registrar Otro Producto
+            </a>
+    </li>
+    <li>
+        <a href="/">
+                Ver Productos Registrados
+            </a>
+    </li>
+</ul>
+{% endblock %}
